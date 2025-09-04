@@ -8,14 +8,19 @@
 <body>
   <div class="container">
     <!-- โลโก้โรงเรียน -->
-    <img src="logoo.png" alt="โลโก้โรงเรียน" class="school-logo">
+    <div class="logo-container">
+      <img src="logooo.png" alt="โลโก้โรงเรียน" class="school-logo">
+      <h1 class="title">ตรวจสอบเหล่าของคุณ</h1>
+    </div>
 
-    <h1 class="title">ตรวจสอบเหล่าของคุณ</h1>
+    <!-- ฟอร์มกรอกชื่อ -->
+    <div class="form-container">
+      <input type="text" id="nameInput" placeholder="กรอกชื่อตัวเอง">
+      <button id="checkBtn">ตรวจสอบ</button>
+    </div>
 
-    <input type="text" id="nameInput" placeholder="กรอกชื่อตัวเอง">
-    <button id="checkBtn">ตรวจสอบ</button>
-
-    <div id="result"></div>
+    <!-- ผลลัพธ์ -->
+    <div id="result" class="result-container"></div>
   </div>
 
   <script src="script.js"></script>
