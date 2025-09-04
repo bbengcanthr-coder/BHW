@@ -1,18 +1,18 @@
 /* โหลดฟอนต์ TTF */
 @font-face {
   font-family: 'JS Chanok';
-  src: url('JS-Chanok-Normal.ttf') format('truetype');
+  src: url('fonts/JSChanok.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-/* ตัวพื้นฐาน */
 body {
   font-family: 'JS Chanok', sans-serif;
-  background-color: #000; /* พื้นหลังดำ */
-  color: #fff; /* ตัวอักษรขาว */
+  background-color: #000;
+  color: #fff;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 /* กล่องหลัก */
@@ -23,10 +23,9 @@ body {
   background-color: #111;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(255,255,255,0.1);
-  text-align: center;
 }
 
-/* โลโก้และหัวเรื่อง */
+/* โลโก้โรงเรียน */
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -35,14 +34,15 @@ body {
 }
 
 .school-logo {
-  width: 120px;
-  margin-bottom: 15px;
+  width: 80px; /* ลดขนาดโลโก้ */
+  margin-bottom: 10px;
 }
 
+/* หัวเรื่อง */
 .title {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 0;
+  font-size: 26px;
+  font-weight: normal; /* ไม่หนา */
+  margin: 0 0 20px 0;
 }
 
 /* ฟอร์มกรอกชื่อ */
@@ -61,6 +61,7 @@ input {
   background-color: #000;
   color: #fff;
   width: 70%;
+  font-weight: normal; /* ไม่หนา */
 }
 
 input::placeholder {
@@ -75,7 +76,7 @@ button {
   background-color: #fff;
   color: #000;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: normal; /* ไม่หนา */
   transition: 0.3s;
 }
 
@@ -86,17 +87,19 @@ button:hover {
 /* ผลลัพธ์ */
 .result-container {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px; /* ข้อความยินดีใหญ่ขึ้น */
 }
 
 .result-container p {
   margin: 10px 0;
+  font-weight: bold; /* ข้อความยินดีหนาเด่น */
+  font-size: 24px; /* ทำให้ใหญ่ขึ้น */
 }
 
 .result-container img {
-  width: 120px;
-  margin-top: 15px;
+  width: 250px; /* ทำให้ภาพเหล่าใหญ่ขึ้น */
+  margin-top: 20px;
   border-radius: 15px;
   border: 2px solid #fff;
-  box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+  box-shadow: 0 4px 20px rgba(255,255,255,0.2);
 }
