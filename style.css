@@ -1,7 +1,7 @@
 /* โหลดฟอนต์ TTF */
 @font-face {
   font-family: 'JS Chanok';
-  src: url('fonts/JSChanok.ttf') format('truetype');
+  src: url('JS-Chanok-Normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
