@@ -1,41 +1,66 @@
 /* โหลดฟอนต์ TTF */
 @font-face {
   font-family: 'JS Chanok';
-  src: url('JS-Chanok-Normal.ttf') format('truetype');
+  src: url('fonts/JSChanok.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
+/* ตัวพื้นฐาน */
 body {
   font-family: 'JS Chanok', sans-serif;
   background-color: #000; /* พื้นหลังดำ */
   color: #fff; /* ตัวอักษรขาว */
+  margin: 0;
+  padding: 0;
+}
+
+/* กล่องหลัก */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background-color: #111;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(255,255,255,0.1);
   text-align: center;
 }
 
-.container {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 30px;
-  background-color: #111; /* กล่องดำเข้ม */
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+/* โลโก้และหัวเรื่อง */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .school-logo {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ฟอร์มกรอกชื่อ */
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
 input {
-  padding: 10px;
-  width: 70%;
+  padding: 12px 15px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #fff;
-  margin-right: 5px;
   background-color: #000;
   color: #fff;
+  width: 70%;
 }
 
 input::placeholder {
@@ -43,26 +68,35 @@ input::placeholder {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: none;
   background-color: #fff;
   color: #000;
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: #ccc;
 }
 
-#result {
+/* ผลลัพธ์ */
+.result-container {
   margin-top: 20px;
   font-size: 18px;
 }
 
-#result img {
-  width: 100px;
-  margin-top: 10px;
-  border-radius: 10px;
+.result-container p {
+  margin: 10px 0;
+}
+
+.result-container img {
+  width: 120px;
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.2);
 }
