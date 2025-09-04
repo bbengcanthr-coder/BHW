@@ -92,14 +92,13 @@ button:hover {
 
 .result-container p {
   margin: 10px 0;
-  font-weight: bold; /* ข้อความยินดีหนาเด่น */
+  font-weight: normal; /* ข้อความยินดีหนาเด่น */
   font-size: 24px; /* ทำให้ใหญ่ขึ้น */
 }
 
 .result-container img {
-  width: 250px; /* ทำให้ภาพเหล่าใหญ่ขึ้น */
+  width: 300px; /* ทำให้ภาพเหล่าใหญ่ขึ้น */
   margin-top: 20px;
   border-radius: 15px;
-  border: 2px solid #fff;
-  box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+
 }
